@@ -1,24 +1,67 @@
-# Binaries
+# Binaries for programs and plugins
 *.exe
 *.exe~
 *.dll
 *.so
 *.dylib
-
-# Test binary, built with go test -c
 *.test
-
-# Output of the go coverage tool
 *.out
 
-# Dependency directories
-vendor/
+# Go specific
+/vendor/
+/go.sum
 
 # IDE specific files
 .idea/
 .vscode/
 *.swp
 *.swo
+.DS_Store
 
 # Environment variables
 .env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Log files
+*.log
+logs/
+
+# Database files
+*.db
+*.sqlite
+
+# Docker volumes
+postgres_data/
+
+# Binary output directory
+/bin/
+/dist/
+
+# Test coverage
+coverage.txt
+coverage.html
+
+# Temporary files
+/tmp/
+.tmp/
+
+# Config files with sensitive information
+config.yaml
+config.json
+!example.config.yaml
+!example.config.json
+
+# Generated files
+swagger.json
+swagger.yaml
+docs/swagger/
+
+# Migration lock files
+schema.lock
+
+# Air live reload
+.air.toml
+tmp/
